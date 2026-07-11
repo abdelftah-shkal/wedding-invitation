@@ -74,14 +74,7 @@ export default function Footer() {
           ))}
         </motion.div>
 
-        <a
-          href={weddingData.socialLinks.portfolio}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-8 py-3 border border-[#D4AF37]/40 text-[#D4AF37] text-xs tracking-[0.15em] uppercase font-sans hover:bg-[#D4AF37] hover:text-[#2C2C2C] hover:scale-[1.02] transition-all duration-500"
-        >
-          {content.footer.cta}
-        </a>
+
       </div>
     </footer>
   )
