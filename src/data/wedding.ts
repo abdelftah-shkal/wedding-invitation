@@ -374,7 +374,7 @@ export const weddingData: WeddingData = {
   ],
 
   venue: {
-    name: "The Royal Palace Hotel",
+    name: "Elite Hall",
     address: "Elite Hall , ,Talkha City, Egypt",
     mapUrl: "https://maps.app.goo.gl/UwyvuKzxTVQ6up6Q6",
   },
