@@ -14,10 +14,9 @@ export default function ScrollProvider({ children }: { children: ReactNode }) {
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      smoothTouch: false,
       wheelMultiplier: 1,
       touchMultiplier: 2,
-    })
+    } as ConstructorParameters<typeof Lenis>[0])
 
     let rafId: number
     function raf(time: number) {

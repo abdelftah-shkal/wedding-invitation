@@ -14,7 +14,7 @@ const fadeUp = {
 const schema = z.object({
   name: z.string().min(2, "Name is required"),
   phone: z.string().min(6, "Phone is required"),
-  guests: z.coerce.number().min(1, "At least 1 guest"),
+  guests: z.number().min(1, "At least 1 guest"),
   attendance: z.enum(["attending", "notAttending"]),
   message: z.string().optional(),
 })
@@ -121,7 +121,7 @@ export default function RSVP() {
 
               <div>
                 <input
-                  {...register("guests")}
+                  {...register("guests", { valueAsNumber: true })}
                   type="number"
                   min="1"
                   placeholder={content.rsvp.guests}

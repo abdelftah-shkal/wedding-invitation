@@ -3,7 +3,6 @@ import { LanguageProvider, useLanguage } from "./hooks/useLanguage"
 import ScrollProvider from "./hooks/useScroll"
 import ErrorBoundary from "./components/ErrorBoundary"
 import OpeningScreen from "./components/OpeningScreen/OpeningScreen"
-import OpeningParticles from "./components/OpeningScreen/OpeningParticles"
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher"
 import SparkleLayer from "./components/SparkleLayer/SparkleLayer"
 import Hero from "./components/Hero/Hero"
@@ -27,12 +26,7 @@ function AppContent() {
     <div className="relative min-h-screen" dir={dir}>
       <SparkleLayer />
 
-      {!isOpen && (
-        <>
-          <OpeningParticles />
-          <OpeningScreen onOpen={() => setIsOpen(true)} />
-        </>
-      )}
+      {!isOpen && <OpeningScreen onOpen={() => setIsOpen(true)} />}
 
       {isOpen && <LanguageSwitcher />}
       {isOpen && <MusicPlayer />}

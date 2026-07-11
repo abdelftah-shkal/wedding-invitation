@@ -140,15 +140,15 @@ export interface WeddingData {
 }
 
 export const weddingData: WeddingData = {
-  groomName: "Ahmed",
-  brideName: "Fatima",
-  weddingDate: "2026-12-15",
+  groomName: "Mohamed",
+  brideName: "Asmaa",
+  weddingDate: "2026-07-21",
   weddingTime: "18:00",
-  monogram: "A♡F",
-  groomImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
-  brideImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",
-  musicPath: "/music/romantic-piano.wav",
-  heroImage: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80",
+  monogram: "M♡A",
+  groomImage: "/assets/elsafty.png",
+  brideImage: "/assets/asmaa.jpeg",
+  musicPath: "/music/music.mp3",
+  heroImage: "/assets/Hero.jpeg",
 
   openingSubtitle: "Together with their families, request the honor of your presence",
   language: {
@@ -167,7 +167,7 @@ export const weddingData: WeddingData = {
       },
       hero: {
         subtitle: "نحن ندعوكم لمشاركتنا فرحتنا",
-        date: "15 ديسمبر 2026",
+        date: "21 يوليو 2026",
         scrollDown: "اسفل للأسفل",
       },
       invitation: {
@@ -176,8 +176,8 @@ export const weddingData: WeddingData = {
         message2: "وقال تعالى: {وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً}",
       },
       couple: {
-        groomName: "أحمد",
-        brideName: "فاطمة",
+        groomName: "محمد",
+        brideName: "اسماء",
         groomDesc: "العريس",
         brideDesc: "العروس",
         together: "معاً نبدأ قصة حب جديدة",
@@ -247,7 +247,7 @@ export const weddingData: WeddingData = {
       },
       hero: {
         subtitle: "We invite you to share our joy",
-        date: "December 15, 2026",
+        date: "July 21, 2026",
         scrollDown: "Scroll Down",
       },
       invitation: {
@@ -256,8 +256,8 @@ export const weddingData: WeddingData = {
         message2: "“And among His signs is that He created for you from yourselves mates that you may find tranquility in them, and He placed between you affection and mercy.” — Quran 30:21",
       },
       couple: {
-        groomName: "Ahmed",
-        brideName: "Fatima",
+        groomName: "Mohamed",
+        brideName: "Asmaa",
         groomDesc: "The Groom",
         brideDesc: "The Bride",
         together: "Together we begin a new love story",
@@ -343,15 +343,15 @@ export const weddingData: WeddingData = {
   ],
 
   galleryImages: [
-    { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80", alt: "Elegant wedding ceremony setup with golden decorations", span: "md:col-span-2 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80", alt: "Beautiful wedding arch with white flowers", span: "md:col-span-1 md:row-span-2" },
-    { src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80", alt: "Romantic couple portrait in golden hour", span: "md:col-span-1 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80", alt: "Intertwined wedding rings on silk", span: "md:col-span-1 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80", alt: "Luxury floral arrangements in gold vases", span: "md:col-span-2 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1507504031003-bc1cca1af1e9?w=800&q=80", alt: "Elegant wedding reception table setup", span: "md:col-span-1 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=800&q=80", alt: "Bride and groom hands with wedding rings", span: "md:col-span-1 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1510076857177-7470076d4098?w=800&q=80", alt: "Luxury wedding cake with gold details", span: "md:col-span-1 md:row-span-1" },
-    { src: "https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=800&q=80", alt: "Sunset wedding ceremony by the beach", span: "md:col-span-2 md:row-span-1" },
+    { src: "/assets/image1.jpeg", alt: "Elegant wedding ceremony setup with golden decorations", span: "md:col-span-2 md:row-span-1" },
+    { src: "/assets/image2.jpeg", alt: "Beautiful wedding arch with white flowers", span: "md:col-span-1 md:row-span-2" },
+    { src: "/assets/image3.jpeg", alt: "Romantic couple portrait in golden hour", span: "md:col-span-1 md:row-span-1" },
+    { src: "/assets/image4.jpeg", alt: "Intertwined wedding rings on silk", span: "md:col-span-1 md:row-span-1" },
+    { src: "/assets/image5.jpeg", alt: "Luxury floral arrangements in gold vases", span: "md:col-span-2 md:row-span-1" },
+    { src: "/assets/image6.jpg", alt: "Elegant wedding reception table setup", span: "md:col-span-1 md:row-span-1" },
+    { src: "/assets/image7.jpg", alt: "Bride and groom hands with wedding rings", span: "md:col-span-1 md:row-span-1" },
+    { src: "/assets/image8.jpg", alt: "Luxury wedding cake with gold details", span: "md:col-span-1 md:row-span-1" },
+    { src: "/assets/image9.jpg", alt: "Sunset wedding ceremony by the beach", span: "md:col-span-2 md:row-span-1" },
   ],
 
   eventDetails: [
@@ -377,17 +377,14 @@ export const weddingData: WeddingData = {
 
   venue: {
     name: "The Royal Palace Hotel",
-    address: "123 Elegance Avenue, Garden City, Cairo, Egypt",
-    mapUrl: "https://maps.google.com/?q=Royal+Palace+Hotel+Cairo",
+    address: "Elite Hall , ,Talkha City, Egypt",
+    mapUrl: "https://maps.app.goo.gl/UwyvuKzxTVQ6up6Q6",
   },
 
   socialLinks: {
-    email: "hello@abdelftah.com",
-    whatsapp: "https://wa.me/201234567890",
-    linkedin: "https://linkedin.com/in/abdelftah-shkal",
-    github: "https://github.com/abdelftah",
-    instagram: "https://instagram.com/abdelftah",
-    portfolio: "https://abdelftah.com",
+    email: "abdelftahshkal.com",
+    whatsapp: "https://wa.me/201559359590",
+    instagram: "https://instagram.com/abdelftahshkal/",
   },
 
   developer: {
