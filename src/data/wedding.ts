@@ -144,7 +144,7 @@ export const weddingData: WeddingData = {
   weddingTime: "18:00",
   monogram: "M♡A",
   groomImage: "/assets/elsafty.png",
-  brideImage: "/assets/asmaa.jpeg",
+  brideImage: "/assets/asmaa.jpg",
   musicPath: "/music/music.mp3",
   heroImage: "/assets/Hero.jpeg",
 
