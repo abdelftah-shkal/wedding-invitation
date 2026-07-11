@@ -6,10 +6,7 @@ import { weddingData } from "../../data/wedding"
 const socialIcons = [
   { icon: Mail, href: `mailto:${weddingData.socialLinks.email}`, label: "Email" },
   { icon: Phone, href: weddingData.socialLinks.whatsapp, label: "WhatsApp" },
-  { icon: ExternalLink, href: weddingData.socialLinks.linkedin, label: "LinkedIn" },
-  { icon: Code, href: weddingData.socialLinks.github, label: "GitHub" },
   { icon: Camera, href: weddingData.socialLinks.instagram, label: "Instagram" },
-  { icon: Globe, href: weddingData.socialLinks.portfolio, label: "Portfolio" },
 ]
 
 export default function Footer() {

@@ -28,7 +28,6 @@ export default function OpeningScreen({ onOpen }: Props) {
   const heroBgRef = useRef<HTMLDivElement>(null)
   const leftDoorRef = useRef<HTMLDivElement>(null)
   const rightDoorRef = useRef<HTMLDivElement>(null)
-  const audioRef = useRef<HTMLAudioElement | null>(null)
 
   const groomLetters = weddingData.groomName.split("")
   const brideLetters = weddingData.brideName.split("")
@@ -55,19 +54,7 @@ export default function OpeningScreen({ onOpen }: Props) {
     tl.from(buttonRef.current, { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, 2.6)
   }, [])
 
-  useEffect(() => {
-    let audio: HTMLAudioElement | null = null
-    try {
-      audio = new Audio(weddingData.musicPath)
-      audio.loop = true
-      audio.volume = 0
-      audioRef.current = audio
-    } catch { /* ignore */ }
 
-    return () => {
-      if (audio) { audio.pause(); audio.src = ""; audioRef.current = null }
-    }
-  }, [])
 
   const handleClick = () => {
     const tl = gsap.timeline({ onComplete: onOpen })
@@ -123,11 +110,6 @@ export default function OpeningScreen({ onOpen }: Props) {
       tl.to(rightDoor, { x: "100%", duration: 2.2, ease: "power3.inOut" }, 0.5)
     }
 
-    const audio = audioRef.current
-    if (audio) {
-      audio.play().catch(() => {})
-      tl.to(audio, { volume: 1, duration: 3, ease: "power1.out" }, 0.2)
-    }
   }
 
   return (
@@ -141,10 +123,10 @@ export default function OpeningScreen({ onOpen }: Props) {
 
       <ParticleField />
 
-      <div ref={heroBgRef} className="absolute inset-0 z-20 pointer-events-none will-change-transform" style={{ opacity: 0, transform: "scale(1.15)" }}>
-        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${weddingData.heroImage})` }} />
+      {/* <div ref={heroBgRef} className="absolute inset-0 z-20 pointer-events-none will-change-transform" style={{ opacity: 0, transform: "scale(1.15)" }}>
+        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${weddingData.heroImage})` ,  backgroundPosition: "36% 35%",  }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#F8F3EA]" />
-      </div>
+      </div> */}
 
       <div ref={leftDoorRef} className="absolute top-0 left-0 w-1/2 h-full z-20 pointer-events-none bg-[#2C2C2C]" />
       <div ref={rightDoorRef} className="absolute top-0 right-0 w-1/2 h-full z-20 pointer-events-none bg-[#2C2C2C]" />

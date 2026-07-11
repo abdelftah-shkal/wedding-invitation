@@ -62,7 +62,7 @@ export default function Hero() {
   return (
     <section ref={sectionRef} className="relative h-screen w-full overflow-hidden bg-[#FAF8F2]">
       <div ref={imageRef} className="absolute inset-0 will-change-transform">
-        <div className="w-full h-[120%] bg-cover bg-center" style={{ backgroundImage: `url(${weddingData.heroImage})` }} />
+        <div className="w-full h-[120%] bg-cover bg-center" style={{ backgroundImage: `url(${weddingData.heroImage})` ,  backgroundPosition: "36% 35%",  }} />
         <div className="overlay absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#FAF8F2]" />
       </div>
 
