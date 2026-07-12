@@ -144,7 +144,7 @@ export const weddingData: WeddingData = {
   weddingTime: "18:00",
   monogram: "M♡A",
   groomImage: "/assets/elsafty.png",
-  brideImage: "/assets/asmaa.jpg",
+  brideImage: "/assets/asmaa.jpeg",
   musicPath: "/music/music.mp3",
   heroImage: "/assets/Hero.jpeg",
 
@@ -319,17 +319,12 @@ export const weddingData: WeddingData = {
       description: "Our paths crossed at a mutual friend's gathering. Little did we know, this was the beginning of our forever.",
     },
     {
-      year: "2021",
-      title: "First Adventure",
-      description: "Our first trip together to the mountains. The breathtaking views matched the beauty of our growing bond.",
-    },
-    {
-      year: "2022",
+      year: "2025",
       title: "The Proposal",
       description: "Under a sky full of stars, a question was asked that changed everything. The answer was an overwhelming yes.",
     },
     {
-      year: "2023",
+      year: "2025",
       title: "Engagement",
       description: "Surrounded by family and friends, we celebrated our engagement. The journey to our forever had officially begun.",
     },
